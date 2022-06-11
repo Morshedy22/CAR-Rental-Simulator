@@ -36,8 +36,8 @@ public:
     float get_car_price(float );
     bool get_rented(bool );
 
-    // void get_return_time(char *); // msh 3arf hnt3amml m3ahom azay f 3mlhom comment 3shan momken ykoun k pro
-    // void get_rentled_name(char *); // msh 3arf hnt3amml m3ahom azay f 3mlhom comment 
+    // void get_return_time(char *);
+    // void get_rentled_name(char *); 
 
     // Empty Constructor
     CVehicle();
