@@ -8,7 +8,7 @@ private:
     char Cus_name[50];
     char cus_Email[10];
     char Email_Password[10];  //Ect...
-public:
+public: 
     //setter
     void set_Cus_ID(int ); // sara
     void set_Cus_name(char *); // sara
