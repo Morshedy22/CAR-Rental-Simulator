@@ -1,7 +1,7 @@
 #ifndef CUSTOMER_H_INCLUDE
 #define CUSTOMER_H_INCLUDE
 
-class CCustomer
+class main -> origin
 {
 private:
     int  Cus_ID;
