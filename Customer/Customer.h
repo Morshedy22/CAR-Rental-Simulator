@@ -1,7 +1,7 @@
 #ifndef CUSTOMER_H_INCLUDE
 #define CUSTOMER_H_INCLUDE
 
-class main -> origin
+class CCustomer
 {
 private:
     int  Cus_ID;
@@ -17,9 +17,9 @@ public:
 
     //getter
     int get_Cus_ID(); // sara
-    char *get_Cus_name(); // sara
-    char *get_cus_Email(); // Micheal
-    char *get_Email_Password(); // Micheal
+    char* get_Cus_name(); // sara
+    char* get_cus_Email(); // Micheal
+    char* get_Email_Password(); // Micheal
 
     //Empty Constructor to intiallize all variable with zero and NULL
     CCustomer(); // Micheal 
