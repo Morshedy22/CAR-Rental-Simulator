@@ -118,6 +118,7 @@ void CVehicle::Get_cars_info()
     // Functino to print Cars information
     for(int i = 0; i < cars_number; i++)
     {
+        cout<<"Congratulations on your new rent. Here are your car details."<<endl;
         cout<<"Car ID->"<<car_Id<<endl;
         cout<<"Car Type->"<<car_Id<<endl;
         cout<<"Car Model->"<<car_Id<<endl;
