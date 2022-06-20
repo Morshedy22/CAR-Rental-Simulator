@@ -136,5 +136,35 @@ void CVehicle::Get_cars_info()
 void CVehicle::Rent_car()
 {
     // Fucntion to rent car
+    cout << "1 =BMW ";
+    cout << "2 =Mercedes ";
+    cout << "3 =Honda ";
+    cout << "4 =Toyota ";
+    cout << "5 =Fiat ";
+   
+    int x;
+    cout << "Choose Your Car : " << endl;
+    cin >> x ;
+    switch(x)
+    {
+    case 1:
+        cout << "You Choose to rent BMW";
+
+    case 2:
+        cout << "You Choose to rent Mercedes";
+
+    case 3:
+        cout << "You Choose to rent Honda";
+
+    case 4:
+        cout << "You Choose to rent Toyota";
+
+    case 5:
+        cout << "You Choose to rent Fiat";
+     
+
+
+
+
 
 }
