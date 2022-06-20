@@ -22,3 +22,10 @@ char* CBus::get_name_of_driver()
 {
     return name_of_driver;
 }
+
+// Empty Constructor
+CBus::CBus()
+{
+    number_passentgers_of_bus = 0;
+    name_of_driver[20] = {};
+}

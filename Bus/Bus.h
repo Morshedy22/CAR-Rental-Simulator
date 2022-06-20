@@ -16,6 +16,9 @@ public:
     //getter
     int get_number_passentgers_of_bus();
     char* get_name_of_driver();
+
+    // Empty Constructor
+    CBus();
 };
 
 #endif
