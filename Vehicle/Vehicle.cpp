@@ -2,13 +2,13 @@
 #include "Vehicle.h"
 using namespace std;
 
-
 //Setter
 void CVehicle::set_cars_number(int number)
 {
     ///funciton to set car number
     cars_number = number;
 }
+
 void CVehicle::set_car_Id(int id)
 {
     ///funciton to set car Id
@@ -50,6 +50,7 @@ int CVehicle::get_cars_number()
 {
     /// Function to return car number
     return cars_number;
+    
 }
 char* CVehicle::get_car_model()
 {
@@ -86,6 +87,7 @@ char* CVehicle::get_rentled_name()
 CVehicle::CVehicle()
 {
     // to Init all variable with null and zeros
+    cars_number = 0;
     car_type[10] = {};
     car_model[10] = {};
     car_price = 0;
@@ -97,8 +99,6 @@ CVehicle::CVehicle()
 void CVehicle::Add_Car_details()
 {
     /// Function to Enter car's data
-    for (int i = 0; i < cars_number; i++)
-    {
         cout << "Welcome to the Car Rental Service. Please fill the required information below." << endl;
         cout<<"Please enter the car Id "<<endl;
         cin>>car_Id;
@@ -108,7 +108,7 @@ void CVehicle::Add_Car_details()
         cin>>car_model;
         cout<<"Please enter the car price"<<endl;
         cin>>car_price;
-    }
+    
 }
 
 
@@ -116,19 +116,19 @@ void CVehicle::Add_Car_details()
 void CVehicle::Get_cars_info()
 {
     // Functino to print Cars information
-    for(int i = 0; i < cars_number; i++)
+    
+    cout<<"Car ID->"<<car_Id<<endl;
+    cout<<"Car Type->"<<car_type<<endl;
+    cout<<"Car Model->"<<car_model<<endl;
+    cout<<"Car Price->"<<car_price<<endl;
+    if (rented)
     {
-        cout<<"Car ID->"<<car_Id<<endl;
-        cout<<"Car Type->"<<car_Id<<endl;
-        cout<<"Car Model->"<<car_Id<<endl;
-        cout<<"Car Price->"<<car_Id<<endl;
-        cout<<"Rented->"<<car_Id<<endl;
-        if (Rented)
-        {
-            cout<<"Rentled name->"<<car_Id<<endl;
-            cout<<"Rentled time->"<<car_Id<<endl;
-        }
+        cout<<"Rented-> Ture"<<endl;
+        cout<<"Rentled name->"<<car_Id<<endl;
+        cout<<"Rentled time->"<<car_Id<<endl;
     }
+    cout<<"Rented-> False"<<endl;
+
 }
 
 

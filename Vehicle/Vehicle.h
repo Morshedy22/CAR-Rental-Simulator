@@ -5,6 +5,7 @@ class CVehicle
 {
 private:
     int cars_number;
+    int n_cars;
     int car_Id;
     char car_type[10]; 
     char car_model[10];
@@ -51,4 +52,4 @@ public:
     void Rent_car();
 };
 
-#endif
+#endif 
