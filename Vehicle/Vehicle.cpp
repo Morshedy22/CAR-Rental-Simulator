@@ -7,7 +7,7 @@ using namespace std;
 void CVehicle::set_cars_number(int number)
 {
     ///funciton to set car number
-    car_number = number;
+    cars_number = number;
 }
 void CVehicle::set_car_Id(int id)
 {
@@ -29,18 +29,27 @@ void CVehicle::set_car_price(float price)
     ///funciton to set car price
     car_price = price;
 }
-
-/*////////////////////////
-// Function car is rented
-// Funciton set rented days
-// Function rentled name
-*/////////////////////////
+void CVehicle::set_rented(bool x)
+{
+    //Function car is rented
+    rented = x;
+}
+void CVehicle::set_rentled_time(int time)
+{
+    //Funciton set rented time in days
+    rentled_time = time;
+}
+void CVehicle::set_rentled_name(char *name)
+{
+    //Function to set rentled name
+    strcpy_s(rentled_name, name);
+}
 
 // getter
 int CVehicle::get_cars_number()
 {
     /// Function to return car number
-    return car_number;
+    return cars_number;
 }
 char* CVehicle::get_car_model()
 {
@@ -62,13 +71,21 @@ bool CVehicle::get_rented()
     /// Function to return rented true or false
     return rented;
 }
-
+int CVehicle::get_return_time()
+{
+    /// Function to return retled time
+    return rentled_time;
+}
+char* CVehicle::get_rentled_name()
+{
+    /// Function to return retled name
+    return rentled_name;
+}
 
 // Empty Constructor
 CVehicle::CVehicle()
 {
     // to Init all variable with null and zeros
-    car_number = 0;
     car_type[10] = {};
     car_model[10] = {};
     car_price = 0;
@@ -80,28 +97,42 @@ CVehicle::CVehicle()
 void CVehicle::Add_Car_details()
 {
     /// Function to Enter car's data
-    cin>>car_Id;
-    cout<<"Enter car Id "<<endl;
-    cin>>car_type;
-    cout<<"Enter car Type"<<endl;
-    cin>>car_model;
-    cout<<"Enter car Model"<<endl;
-    cin>>car_price;
-    cout<<"Enter car price"<<endl;
+    for (int i = 0; i < cars_number; i++)
+    {
+        cout<<"Enter car Id "<<endl;
+        cin>>car_Id;
+        cout<<"Enter car Type"<<endl;
+        cin>>car_type;
+        cout<<"Enter car Model"<<endl;
+        cin>>car_model;
+        cout<<"Enter car price"<<endl;
+        cin>>car_price;
+    }
 }
 
 
-///
-//void CVehicle::Get_cars_info()
-///
+
+void CVehicle::Get_cars_info()
+{
+    // Functino to print Cars information
+    for(int i = 0; i < cars_number; i++)
+    {
+        cout<<"ID->"<<car_Id<<endl;
+        cout<<"Type->"<<car_Id<<endl;
+        cout<<"model->"<<car_Id<<endl;
+        cout<<"price->"<<car_Id<<endl;
+        cout<<"rented->"<<car_Id<<endl;
+        if (rented)
+        {
+            cout<<"rentled name->"<<car_Id<<endl;
+            cout<<"rentled time->"<<car_Id<<endl;
+        }
+    }
+}
 
 
-///
-// Fucntion to rent car
-///
+void CVehicle::Rent_car()
+{
+    // Fucntion to rent car
 
-
-
-
-
-
+}

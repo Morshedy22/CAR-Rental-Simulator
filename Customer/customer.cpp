@@ -42,7 +42,7 @@ char* CCustomer::get_Email_Password()
 ///Empty Constuctor
 CCustomer::CCustomer()
 {
-    Cus_ID = 0;
+    Cus_ID = 50;
     Cus_name[50] = {};
     cus_Email[10] = {};
     Email_Password[10] = {};
