@@ -12,7 +12,7 @@ private:
     float car_price;
     bool rented;
     int rentled_time;
-    char rentled_name[50];
+    char rentled_name[20];
 
 
 public:
