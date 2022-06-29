@@ -11,8 +11,8 @@ private:
     char car_model[10];
     float car_price;
     bool rented;
-    int rentled_time;
-    char rentled_name[20];
+    int Rented_time;
+    char Rented_name[20];
 
 
 public:
@@ -24,8 +24,8 @@ public:
     void set_car_type(char *);
     void set_car_price(float );
     void set_rented(bool );
-    void set_rentled_time(int );  
-    void set_rentled_name(char *); 
+    void set_Rented_time(int );  
+    void set_Rented_name(char *); 
 
     //getter 
     int get_car_number();
@@ -33,8 +33,8 @@ public:
     char* get_car_type();  
     float get_car_price();
     bool get_rented();
-    int get_rentled_time();
-    char* get_rentled_name(); 
+    int get_Rented_time();
+    char* get_Rented_name(); 
 
 
 

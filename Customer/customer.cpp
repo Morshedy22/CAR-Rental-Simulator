@@ -51,7 +51,7 @@ CCustomer::CCustomer()
 // Function to Add Customer information and store it
 void CCustomer::Add_customer_info()
 {
-    cout<<"Enter your ID"<<endl;
+    cout<<"\nEnter your ID"<<endl;
     cin>>Cus_ID;
     cout<<"Enter your Name"<<endl;
     cin>>Cus_name;
@@ -61,15 +61,18 @@ void CCustomer::Add_customer_info()
     cin>>Email_Password;
 }
 
-// Function to print Customer details
+
 void CCustomer::Get_Customer_info()
 {
-    cout<<"ID->         "<<Cus_ID<<endl;
-    cout<<"Name->       "<<Cus_name<<endl;
-    cout<<"Email->      "<<cus_Email<<endl;
-    cout<<"Password->   "<<Email_Password<<endl;
+  
+ cout << "\n\t\t                       Car Rental - Customer              "<<endl;
+    cout << "\t\t	///////////////////////////////////////////////////////////"<<endl;
+    cout << "\t\t	|ID:"<<"-----------------|"<<Cus_ID<<" |"<<endl;
+    cout << "\t\t	| Name :"<<"--------------------|"<<Cus_name<<" |"<<endl;
+    cout << "\t\t	| Email. :"<<"----------------------|"<<cus_Email<<" |"<<endl;
+    cout << "\t\t	| Password :"<<"---------------|"<<Email_Password<<" |"<<endl;
+    cout << "\t\t	///////////////////////////////////////////////////////////"<<endl;
 }
-
 
 
 
