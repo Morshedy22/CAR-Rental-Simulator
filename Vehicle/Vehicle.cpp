@@ -2,17 +2,12 @@
 #include "Vehicle.h"
 using namespace std;
 
+int CVehicle::cars_number = 0;
 //Setter
-void CVehicle::set_cars_number(int number)
-{
-    ///funciton to set car number
-    cars_number = number;
-}
-
-void CVehicle::set_car_Id(int id)
+void CVehicle::set_car_number(int N)
 {
     ///funciton to set car Id
-    car_Id = id;
+    car_number = N;
 }
 void CVehicle::set_car_type(char *model)
 {
@@ -46,10 +41,10 @@ void CVehicle::set_rentled_name(char *name)
 }
 
 // getter
-int CVehicle::get_cars_number()
+int CVehicle::get_car_number()
 {
     /// Function to return car number
-    return cars_number;
+    return car_number;
     
 }
 char* CVehicle::get_car_model()
@@ -72,7 +67,7 @@ bool CVehicle::get_rented()
     /// Function to return rented true or false
     return rented;
 }
-int CVehicle::get_return_time()
+int CVehicle::get_rentled_time()
 {
     /// Function to return retled time
     return rentled_time;
@@ -87,7 +82,7 @@ char* CVehicle::get_rentled_name()
 CVehicle::CVehicle()
 {
     // to Init all variable with null and zeros
-    cars_number = 0;
+    
     car_type[10] = {};
     car_model[10] = {};
     car_price = 0;
@@ -97,30 +92,39 @@ CVehicle::CVehicle()
 }
 
 
-///
 void CVehicle::Add_Car_details()
 {
     /// Function to Enter car's data
+    cars_number++;
 
-        cout << "\nWelcome to the Car Rental Service. Please fill the required information below." << endl;
+    cout << "\nWelcome to the Car Rental Service. Please fill the required information below." << endl;
+    cout<<"##################################################################"<<endl;
+    cout<<"Please enter the car Number: "<<endl;
+    cin>>car_number;
+    cout<<"Please enter the car Type: "<<endl;
+    cin>>car_type;
+    cout<<"Please enter the car Model: "<<endl;
+    cin>>car_model;
+    cout<<"Please enter the car price: "<<endl;
+    cin>>car_price;
+    cout<<"Please enter '1' if car is rented and if not '0' : "<<endl;
+    cin>>rented;
+    if(rented)
+    {
+        cout<<"Please enter rentled time: "<<endl;
+        cin>>rentled_time;
+        cout<<"Please enter rentled Name: "<<endl;
+        cin>>rentled_name;
         cout<<"##################################################################"<<endl;
-        cout<<"Please enter the car Id "<<endl;
-        cin>>car_Id;
-        cout<<"Please enter the car Type "<<endl;
-        cin>>car_type;
-        cout<<"Please enter the car Model "<<endl;
-        cin>>car_model;
-        cout<<"Please enter the car price "<<endl;
-        cin>>car_price;
-        cout<<"##################################################################"<<endl;
+    }
 }
 
 void CVehicle::Get_cars_info()
 {
-    // Functino to print Cars information
+    // Function to print Cars information
     
-    cout<<"\n"<<car_Id<<"\t\t"<<car_type<<"\t\t"<<car_model<<"\t\t"<<car_price<<"\t\t";
-    printf("%s",rented?"Ture":"False");
+    cout<<"\n"<<car_number<<"\t\t"<<car_type<<"\t\t"<<car_model<<"\t\t"<<car_price<<"\t\t";
+    printf("%s",rented?"YES":"NO");
     if(rented)
         cout<<"\t\t"<<rentled_name<<"\t\t"<<rentled_time;   
 }
@@ -128,34 +132,11 @@ void CVehicle::Get_cars_info()
 
 
 
-void CVehicle::Rent_car()
+int CVehicle::Rent_car()
 {
-    // Fucntion to rent car
-    cout << "1 =BMW ";
-    cout << "2 =Mercedes ";
-    cout << "3 =Honda ";
-    cout << "4 =Toyota ";
-    cout << "5 =Fiat ";
-   
-    int x;
-    cout << "Choose Your Car : " << endl;
-    cin >> x ;
-    switch(x)
-    {
-        case 1:
-            cout << "You Choose to rent BMW";
-
-        case 2:
-            cout << "You Choose to rent Mercedes";
-
-        case 3:
-            cout << "You Choose to rent Honda";
-
-        case 4:
-            cout << "You Choose to rent Toyota";
-
-        case 5:
-            cout << "You Choose to rent Fiat";
-     
-    }
+    
+    rented = true;
+    return rentled_time;
 }
+
+

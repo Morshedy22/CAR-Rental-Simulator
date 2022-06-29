@@ -4,9 +4,9 @@
 class CVehicle
 {
 private:
-    int cars_number;
+    static int cars_number;
     int n_cars;
-    int car_Id;
+    int car_number;
     char car_type[10]; 
     char car_model[10];
     float car_price;
@@ -18,7 +18,7 @@ private:
 public:
 
     // setter
-    void set_cars_number(int );
+    void set_car_number(int );
     void set_car_Id(int );
     void set_car_model(char *);
     void set_car_type(char *);
@@ -28,12 +28,12 @@ public:
     void set_rentled_name(char *); 
 
     //getter 
-    int get_cars_number();
+    int get_car_number();
     char* get_car_model();
     char* get_car_type();  
     float get_car_price();
     bool get_rented();
-    int get_return_time();
+    int get_rentled_time();
     char* get_rentled_name(); 
 
 
@@ -49,7 +49,7 @@ public:
     void Get_cars_info();
 
     // Function to Rent_car
-    void Rent_car();
+    int Rent_car();
 };
 
 #endif 
