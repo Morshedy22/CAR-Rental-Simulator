@@ -99,15 +99,15 @@ void CVehicle::Add_Car_details()
 
     cout << "\nWelcome to the Car Rental Service. Please fill the required information below." << endl;
     cout<<"##################################################################"<<endl;
-    cout<<"Please enter the car Number: "<<endl;
+    cout<<"Please enter the Vehicle Number: "<<endl;
     cin>>car_number;
-    cout<<"Please enter the car Type: "<<endl;
+    cout<<"Please enter the Vehicle Type: "<<endl;
     cin>>car_type;
-    cout<<"Please enter the car Model: "<<endl;
+    cout<<"Please enter the Vehicle Model: "<<endl;
     cin>>car_model;
-    cout<<"Please enter the car price: "<<endl;
+    cout<<"Please enter the Vehicle price: "<<endl;
     cin>>car_price;
-    cout<<"Please enter '1' if car is rented and if not '0' : "<<endl;
+    cout<<"Please enter '1' if Vehicle is rented and if not '0' : "<<endl;
     cin>>rented;
     if(rented)
     {
@@ -115,7 +115,7 @@ void CVehicle::Add_Car_details()
         cin>>rentled_time;
         cout<<"Please enter rentled Name: "<<endl;
         cin>>rentled_name;
-        cout<<"##################################################################"<<endl;
+        
     }
 }
 
@@ -123,10 +123,10 @@ void CVehicle::Get_cars_info()
 {
     // Function to print Cars information
     
-    cout<<"\n"<<car_number<<"\t\t"<<car_type<<"\t\t"<<car_model<<"\t\t"<<car_price<<"\t\t";
-    printf("%s",rented?"YES":"NO");
+    cout<<car_number<<"\t\t"<<car_type<<"\t\t"<<car_model<<"\t\t"<<car_price<<"\t\t";
+    printf("%s",rented?"YES\t":"NO\t");
     if(rented)
-        cout<<"\t\t"<<rentled_name<<"\t\t"<<rentled_time;   
+        cout<<"\t"<<rentled_name<<"\t\t"<<rentled_time;   
 }
 
 

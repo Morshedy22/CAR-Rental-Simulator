@@ -10,6 +10,7 @@
 #include <bits/stdc++.h>
 #include "Customer\Customer.cpp"
 #include "Vehicle\Vehicle.cpp"
+#include "Bus\Bus.cpp"
 using namespace std;
 
 
@@ -29,10 +30,11 @@ int main()
     {
         vec[i].Add_Car_details();
     }
-    cout<<"\t\t\t***ALL CARS INFORMATIONS***"<<endl;
+    cout<<"\n\t\t\t\t\t***ALL CARS INFORMATIONS***\n"<<endl;
     cout<<"Car Number\tCar Type\tCar Model\tCar Price\tRented\t\tRentled name\tRentled time";
     for(int i=0; i<n; i++)
     {
+        cout<<"\n";
         vec[i].Get_cars_info();
     }
 
@@ -78,12 +80,49 @@ int main()
     }
 
 
-    cout<<"\t\t\t***ALL CARS INFORMATIONS***"<<endl;
-    cout<<"Car Number\tCar Type\tCar Model\tCar Price\tRented\t\tRentled name\tRentled time";
-    for(int i=0; i<n; i++)
+    cout<<"\t\t\t\t\t***ALL CARS INFORMATIONS***\n"<<endl;
+    cout<<"Car Number\tCar Type\tCar Model\tCar Price\tRented\t\tRentled name\tRentled time"<<endl;
+        for(int i=0; i<n; i++)
     {
+        cout<<"\n";
         vec[i].Get_cars_info();
     }
+
+
+    CBus bus[100];
+
+    int n_bus;
+    cout<<"\n\nEnter number of Bus: "<<endl;
+    cin>>n_bus;
+    int n_passengers;
+    char n_dirver[20];
+    for(int i=0; i<n_bus; i++)
+    {
+        cout<<"\n";
+        
+        bus[i].Add_Car_details();
+
+        cout<<"Enter number of passngers: ";
+        cin>>n_passengers;
+        cout<<"\nName of Driver: ";
+        cin>>n_dirver;
+        bus[i].set_number_passentgers_of_bus(n_passengers);
+        bus[i].set_name_of_driver(n_dirver);
+    }
+
+    cout<<"\n\n\t\t\t\t\t\t\t\t***ALL BUSES INFORMATIONS***\n"<<endl;
+    cout<<"Number of passengers\t Name of driver\t\tBus Number\tBus Type\tBus Model\tBus Price\tRented\t\tRentled name\tRentled time";
+        for(int i=0; i<n_bus; i++)
+    {
+        cout<<"\n";
+        cout<<bus[i].get_number_passentgers_of_bus()<<"\t\t\t  ";
+        cout<<bus[i].get_name_of_driver()<<"\t\t";
+        bus[i].Get_cars_info();
+    }    
+
+
+
+
 
 
 }
