@@ -97,23 +97,23 @@ void CVehicle::Add_Car_details()
     /// Function to Enter car's data
     cars_number++;
 
-    cout << "\nWelcome to the Car Rental Service. Please fill the required information below." << endl;
-    cout<<"##################################################################"<<endl;
-    cout<<"Please enter the Vehicle Number: "<<endl;
+    cout<<"\n###############################################################################################################"<<endl;
+    cout << "\n\t\tWelcome to the Vehicle Rental Service. Please fill the required information below." << endl;
+    cout<<"\n Add Vehicle Number: "<<endl;
     cin>>car_number;
-    cout<<"Please enter the Vehicle Type: "<<endl;
+    cout<<" Add Vehicle Type: "<<endl;
     cin>>car_type;
-    cout<<"Please enter the Vehicle Model: "<<endl;
+    cout<<" Add Vehicle Model: "<<endl;
     cin>>car_model;
-    cout<<"Please enter the Vehicle price: "<<endl;
+    cout<<" Add Vehicle price: "<<endl;
     cin>>car_price;
-    cout<<"Please enter '1' if Vehicle is rented and if not '0' : "<<endl;
+    cout<<" '1' if Vehicle is rented and if not '0' : "<<endl;
     cin>>rented;
     if(rented)
     {
-        cout<<"Please enter Rented time: "<<endl;
+        cout<<" Rented time: "<<endl;
         cin>>Rented_time;
-        cout<<"Please enter Rented Name: "<<endl;
+        cout<< " Rented Name: "<<endl;
         cin>>Rented_name;
         
     }

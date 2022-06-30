@@ -7,7 +7,7 @@
  *                  Michael Hany         211001760                     *
 */////////////////////////////////////////////////////////////////////// 
 
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 #include "Customer\Customer.cpp"
 #include "Vehicle\Vehicle.cpp"
 #include "Bus\Bus.cpp"
@@ -53,10 +53,9 @@ int main()
     {
         cus[i].Get_Customer_info();
     }
+    //--------------------------------------------------------------------------------------------------
 
 
-
-    
 
 
 
@@ -80,7 +79,7 @@ int main()
                     flag = 1;
         }    
             
-            
+        // If flag is True that mean username and pass is true    
         if(flag)
         {
             cout<<"\n\n\t\tWelocme "<<username<<endl;
@@ -116,7 +115,7 @@ int main()
         }
         else
         {
-            cout<<"\nInvalid Username or Password\n";
+            cout<<"\n\t****Invalid Username or Password****\n";
         }
 
     }
@@ -133,8 +132,9 @@ int main()
 
 
     //--------------------------------------------------------------------------------------------------
+    cout<<"\n\n#############################################################################################################################################"<<endl;
     CBus bus[100];
-
+    
     int n_bus;
     cout<<"\n\nEnter number of Bus: "<<endl;
     cin>>n_bus;
@@ -146,9 +146,9 @@ int main()
         
         bus[i].Add_Car_details();
 
-        cout<<"Enter number of passngers: ";
+        cout<<" Number of passngers: ";
         cin>>n_passengers;
-        cout<<"\nName of Driver: ";
+        cout<<"\n Name of Driver: ";
         cin>>n_dirver;
         bus[i].set_number_passentgers_of_bus(n_passengers);
         bus[i].set_name_of_driver(n_dirver);
@@ -164,10 +164,6 @@ int main()
         bus[i].Get_cars_info();
     }   
     //-------------------------------------------------------------------------------------------------- 
-
-
-
-
 
 
 }
