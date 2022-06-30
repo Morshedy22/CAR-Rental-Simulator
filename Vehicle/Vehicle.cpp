@@ -2,7 +2,7 @@
 #include "Vehicle.h"
 using namespace std;
 
-int CVehicle::cars_number = 0;
+
 //Setter
 void CVehicle::set_car_number(int N)
 {
@@ -95,8 +95,6 @@ CVehicle::CVehicle()
 void CVehicle::Add_Car_details()
 {
     /// Function to Enter car's data
-    cars_number++;
-
     cout<<"\n###############################################################################################################"<<endl;
     cout << "\n\t\tWelcome to the Vehicle Rental Service. Please fill the required information below." << endl;
     cout<<"\n Add Vehicle Number: "<<endl;

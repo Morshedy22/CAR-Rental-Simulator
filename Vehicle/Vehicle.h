@@ -4,7 +4,7 @@
 class CVehicle
 {
 private:
-    static int cars_number;
+
     int n_cars;
     int car_number;
     char car_type[10]; 
