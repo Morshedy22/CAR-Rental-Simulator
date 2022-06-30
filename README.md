@@ -18,7 +18,8 @@ This section contains all team names and IDs.
 ## Application Description:
   This is a simple car rental system that allows the user to enter his information/login to the system, choose between our selection of cars, check whether a car is        rented or not, and finally rent it.
   
-##Flowchart of execution sequence: 
+## Flowchart of execution sequence: 
+
 https://my.visme.co/view/x43xk0nd-voql9kmgqvmp2x1w
 
 Sample input and output screen: 
