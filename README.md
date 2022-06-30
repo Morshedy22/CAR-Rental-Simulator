@@ -24,3 +24,6 @@ https://my.visme.co/view/x43xk0nd-voql9kmgqvmp2x1w
 
 ## Sample input and output screen: 
 
+<img src="Images/Input.jpeg" width = "300" height = "300">
+
+
