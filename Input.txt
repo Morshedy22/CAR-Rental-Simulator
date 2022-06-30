@@ -4,18 +4,14 @@
 3 toyota 2023 300 1 5 Rovan
 4 BMW 2022 1000 0
 
-
 2
 241211 ashraf ashraf@ ashraf123
 234121 Tefa   Tefa@   Tefa321
-
 
 morshdy omar2222
 
 ashraf ashraf123
 2 4 y
-
-
 
 3
 1 Voyager 2010 700 0 12 Mohamed
