@@ -24,6 +24,21 @@ https://my.visme.co/view/x43xk0nd-voql9kmgqvmp2x1w
 
 ## Sample input and output screen: 
 
+### Input
 <img src="Images/Input.jpeg" width = "300" height = "300">
+
+### Output
+#### Cars Information before rent
+<img src="Images/CarsInformation1.jpeg" width = "300" height = "300">
+
+#### Customer Information
+<img src="Images/CustomerInfo.jpeg" width = "300" height = "300">
+
+#### Cars Information after rent
+<img src="Images/CarsInformation2.jpeg" width = "300" height = "300">
+
+#### Buses Information
+<img src="Images/BusInfo.jpeg" width = "300" height = "300">
+
 
 
