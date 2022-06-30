@@ -24,5 +24,6 @@ https://my.visme.co/view/x43xk0nd-voql9kmgqvmp2x1w
 
 ## Sample input and output screen: 
 
-![](Images/Input.jpeg)
+<img src="Images/Input.jpeg" width = "200" height = "200">
+<!-- ![](Images/Input.jpeg) -->
 
