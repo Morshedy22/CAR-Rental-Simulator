@@ -24,5 +24,5 @@ https://my.visme.co/view/x43xk0nd-voql9kmgqvmp2x1w
 
 ## Sample input and output screen: 
 
-![](Images/
+![](Images/Input.jpeg)
 
