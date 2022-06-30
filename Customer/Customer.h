@@ -10,27 +10,25 @@ private:
     char Email_Password[10];  //Ect...
 public: 
     //setter
-    void set_Cus_ID(int ); // sara
-    void set_Cus_name(char *); // sara
-    void set_cus_Email(char *); // Micheal
-    void set_Email_Password(char *); // Micheal
+    void set_Cus_ID(int ); 
+    void set_Cus_name(char *); 
+    void set_cus_Email(char *); 
+    void set_Email_Password(char *); 
 
     //getter
-    int get_Cus_ID(); // sara
-    char* get_Cus_name(); // sara
-    char* get_cus_Email(); // Micheal
-    char* get_Email_Password(); // Micheal
+    int get_Cus_ID(); 
+    char* get_Cus_name(); 
+    char* get_cus_Email(); 
+    char* get_Email_Password(); 
 
     //Empty Constructor to intiallize all variable with zero and NULL
-    CCustomer(); // Micheal 
+    CCustomer();  
 
     //Function that accepts values for the customer class members and store them.
-    void Add_customer_info(); // sara
+    void Add_customer_info(); 
 
     //Function that prints the customer details.
-    void Get_Customer_info(); // sara
-
-
+    void Get_Customer_info(); 
 
 };
 
